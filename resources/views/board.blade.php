@@ -22,6 +22,7 @@
 				</tr>
 				</thead>
 				<tbody>
+
 				<tr>
 					<td>1</td>
 					<td>s1234567890</td>
@@ -31,7 +32,7 @@
 					<td>60</td>
 					<td>180</td>
 					<td>
-						<a class="btn btn-default btn-sm" href="#">查看學生資料</a>
+						<a class="btn btn-default btn-sm" href="{{route('student_no')}}">查看學生資料</a>
 					</td>
 				</tr>
 				</tbody>
