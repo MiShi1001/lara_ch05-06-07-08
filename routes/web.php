@@ -76,3 +76,6 @@ Route::group(['prefix' => 'student'],function(){
 Route::group(['namespace'=>'Cool'],function (){
     Route::get('cool','TestController@index');
 });
+
+//Board
+Route::get('/board','BoardController@getIndex');
