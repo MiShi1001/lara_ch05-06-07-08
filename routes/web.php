@@ -79,3 +79,5 @@ Route::group(['namespace'=>'Cool'],function (){
 
 //Board
 Route::get('/board','BoardController@getIndex');
+//Score
+Route::get('/score', 'StudentController@getStudentScore');
