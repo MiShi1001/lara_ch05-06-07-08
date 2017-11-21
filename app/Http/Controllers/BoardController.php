@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Route;
 use View;
 
-
+use App\Score;
 class BoardController extends Controller
 {
     public function getIndex(){
