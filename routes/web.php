@@ -62,7 +62,8 @@ Route::group(['prefix' => 'student'],function(){
 });
 
 //路由與controller的綁定
-Route::get('/', 'HomeController@index');
+Route::get('/',['as' => 'Laravel',
+    'uses'=> 'HomeController@index']);
 
 Route::pattern('student_no','s[0-9]{10}');
 Route::group(['prefix' => 'student'],function(){
@@ -78,6 +79,8 @@ Route::group(['namespace'=>'Cool'],function (){
 });
 
 //Board
-Route::get('/board','BoardController@getIndex');
+Route::get('/board',['as' => 'board',
+    'uses'=>'BoardController@getIndex']);
 //Score
-Route::get('/score', 'StudentController@getStudentScore');
+Route::get('/score',['as' => 'score',
+    'uses'=>'StudentController@getStudentScore']);
