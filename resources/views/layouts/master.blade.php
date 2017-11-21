@@ -3,11 +3,11 @@
 <head>
     <title>@yield('title')</title>
     @section('head')
-        @include('partials.head')
+        @include('layouts.partials.head')
     @show
 </head>
 <body>
-@include('partials.nav')
+@include('layouts.partials.nav')
 <div class="container">
     @yield('content')
 </div>
