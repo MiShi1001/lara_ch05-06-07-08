@@ -19,7 +19,7 @@ class CreateScoresTable extends Migration
             $table->unsignedInteger('chinese');
             $table->unsignedInteger('english');
             $table->unsignedInteger('math');
-            $table->unsignedInteger('total');
+            $table->unsignedInteger('total')->nullable();
             $table->timestamps();
         });
     }
