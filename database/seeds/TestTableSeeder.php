@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Score as Score;
 class TestTableSeeder extends Seeder
 {
     /**
